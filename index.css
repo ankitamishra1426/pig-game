@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to left, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Rubik Doodle Shadow',sans-serif;
+}
+main {
+    position: relative;
+    display: flex;
+    width:68vw ;
+    height:85vh;
+    background-color: rgba(255, 255, 255, 0.35); 
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.player{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+.player--active{
+   background-color: rgba(98, 245, 115, 0.5);
+}
+.player--active .current-mark {
+	opacity: 1;
+}
+
+.player .player-chance{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.player .name{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #0c430c;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.player .score {
+    font-size: 6rem;
+    font-weight: 300;
+    color: #0c430c;
+    margin-bottom: auto;
+}
+.player .current-mark{
+    background-color: #55c755;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #0c430c;
+    width: 65%;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+.player .current-mark .current-lable{
+    color: #0c430c;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.player .current-mark .current-score {
+    font-size: 3.5rem;
+    font-weight:500;
+}
+.main-buttons{
+    position: absolute;
+    left: 42.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width:10vw;
+    height:85vh;
+}
+.main-buttons .btn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+}
+.main-buttons  .play , .main-buttons .hold{
+    padding: 1rem 2rem;
+}
+.main-buttons img{
+    width: 6vw;
+}
+.hidden{
+    display:none ;
+}
+
+
+
